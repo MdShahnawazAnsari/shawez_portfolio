@@ -75,7 +75,7 @@ const Intro = () => {
       <section id="intro" className="home">
         <div className="home-content">
           <section className="content-container">
-            <h2>Hi,</h2>
+            {/* <h2>Hi,</h2> */}
             <h1>Shawez Faraz</h1>
             <h3>
               <b>Video Editor & content strategist</b>

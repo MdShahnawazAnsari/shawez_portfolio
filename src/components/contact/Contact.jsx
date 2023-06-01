@@ -42,7 +42,7 @@ export default function Contact() {
   };
   const controlAnimation = () => {
     // console.log(window.scrollY);
-    if (window.scrollY > 2800) setRunAnimation(true);
+    if (window.scrollY > 2500) setRunAnimation(true);
     setLastScrollY(window.scrollY);
   };
 

@@ -33,7 +33,9 @@
         animation: slideRight 0.5s ease forwards;
         animation-delay: 1s;
         color: var(--action);
+        margin-top: 2rem;
         @include md {
+          margin-top: 0;
           font-size: 46px;
           padding: 20px 0;
         }
