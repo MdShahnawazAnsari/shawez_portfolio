@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SingleProject.scss";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import VideoPopup from "../../video/vidioPopUp";
+import VideoPopup from "../../video/VideoPopup";
 
 function SingleProject({ data: { title, asIn, id, summary } }) {
   const [show, setShow] = useState(false);
