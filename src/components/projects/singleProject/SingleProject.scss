@@ -1,0 +1,101 @@
+@import "../../../css_config/mixins.scss";
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-decoration: none;
+  color: var(--text-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .name {
+    h2 {
+      font-size: 15px;
+      text-align: center;
+      color: var(--action);
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      @include md {
+        font-size: 20px;
+      }
+    }
+    h3 {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+  }
+  .summary-heading {
+    margin: 5px 0;
+    opacity: 0.5;
+    font-size: 15px;
+    text-align: center;
+    @include md {
+      font-size: 18px;
+    }
+  }
+  .technology {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    @include md {
+      margin: 20px 0;
+      font-size: 20px;
+    }
+    .technology-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 50px;
+        height: 50px;
+        padding: 10px 5px;
+        &:hover {
+          animation: floatImage 3s ease forwards infinite;
+          border: 1px solid var(--action);
+          box-shadow: 0 0 10px var(--action);
+        }
+        @include md {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+  }
+  .btn {
+    display: inline-flex;
+    background: var(--action);
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s ease;
+    &:hover {
+      background: var(--text-white);
+    }
+    a {
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      padding: 10px 20px;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: var(--text-white);
+      &:hover {
+        color: var(--action);
+      }
+    }
+  }
+}

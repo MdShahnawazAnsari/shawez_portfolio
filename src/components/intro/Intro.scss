@@ -1,0 +1,182 @@
+@import "../../css_config/mixins.scss";
+.home {
+  padding-bottom: 20px;
+  @include md {
+    height: 85vh;
+  }
+  .home-content {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 10px 0;
+    @include md {
+      flex-direction: row;
+      margin-top: 90px;
+    }
+    .content-container {
+      width: 100%;
+      padding-top: 1rem;
+      @include md {
+        width: 60%;
+      }
+      h1 {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 0;
+        opacity: 0;
+        animation: slideRight 0.5s ease forwards;
+        animation-delay: 1s;
+        color: var(--action);
+        @include md {
+          font-size: 46px;
+          padding: 20px 0;
+        }
+      }
+      h3 {
+        padding-bottom: 1rem;
+        font-size: 18px;
+        font-weight: 700;
+        opacity: 0;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: 0.7s;
+        b {
+          margin-bottom: 1rem;
+        }
+        @include md {
+          font-size: 32px;
+          margin: 10px 0;
+        }
+      }
+      p {
+        margin: 10px 0;
+        width: 100%;
+        font-size: 22px;
+        opacity: 0;
+        animation: slideLeft 0.5s ease forwards;
+        animation-delay: 1s;
+        @include md {
+          width: 85%;
+        }
+      }
+      .social-media {
+        a {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          color: var(--action);
+          border: 2px solid var(--action);
+          border-radius: 50%;
+          text-decoration: none;
+          background: transparent;
+          margin: 30px 15px 30px 0;
+          transition: 0.5 ease;
+          opacity: 0;
+          &:hover {
+            box-shadow: 0 0 10px var(--action);
+          }
+        }
+      }
+      .btn {
+        display: inline-flex;
+        padding: 12px 28px;
+        background: var(--action);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        font-size: 16px;
+        color: var(--text-white);
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        opacity: 0;
+        animation: slideTop 1s ease forwards;
+        animation-delay: 2s;
+        margin-bottom: 20px;
+        transition: 0.5s ease;
+        @include md {
+          margin-bottom: 0;
+        }
+        &:hover {
+          background: var(--text-white);
+          color: var(--action);
+        }
+      }
+    }
+    .image-contanier {
+      width: 90%;
+      height: 35vh;
+      animation: floatImage 3s ease-in-out infinite;
+      margin-top: 4rem;
+      @include md {
+        width: 35vw;
+        margin-top: -7rem;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+  .animation-container {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    @include md {
+      display: flex;
+    }
+    .animationBtn {
+      width: 22px;
+      border: 2px solid var(--action);
+      height: 45px;
+      border-radius: 20%;
+      &:hover {
+        box-shadow: 0 0 5px var(--action);
+      }
+      .ball {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        border-radius: 49%;
+        background: var(--action);
+        animation: upAndDown 2s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
