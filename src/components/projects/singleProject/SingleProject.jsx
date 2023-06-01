@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./SingleProject.scss";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import VideoPopup from "../../video/vidioPopUp";
 
 function SingleProject({ data: { title, asIn, id, summary } }) {
