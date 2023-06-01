@@ -78,7 +78,7 @@ const Intro = () => {
             {/* <h2>Hi,</h2> */}
             <h1>Shawez Faraz</h1>
             <h3>
-              <b>Video Editor & content strategist</b>
+              <b>Content Strategist & Video Editor</b>
             </h3>
             <p>
               A highly skilled video editor, content creator with a passion for
