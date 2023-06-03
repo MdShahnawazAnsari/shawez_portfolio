@@ -45,7 +45,7 @@ export const technologyLogo = [
     src: "assets/technology/adobe_creative_cloud.svg",
   },
   {
-    title: "Cnva",
+    title: "Canva",
     src: "assets/technology/canva.svg",
   },
   {
