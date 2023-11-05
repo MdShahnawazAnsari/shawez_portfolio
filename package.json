@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "axios": "^1.6.0",
     "react-player": "^2.12.0",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.62.1"

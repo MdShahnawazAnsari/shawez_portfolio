@@ -1,8 +1,5 @@
 @import "../../../css_config/mixins.scss";
 .project-container {
-  display: flex;
-  justify-content: center;
-  align-self: center;
   text-decoration: none;
   color: var(--text-black);
   display: flex;
@@ -13,7 +10,7 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -22,6 +19,8 @@
   .name {
     h2 {
       font-size: 15px;
+      height: auto;
+      padding: 24px 0;
       text-align: center;
       color: var(--action);
       display: -webkit-box;

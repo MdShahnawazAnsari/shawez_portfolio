@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SingleProject.scss";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import VideoPopup from "../../video/VideoPopup";
 
-function SingleProject({ data: { title, asIn, id, summary } }) {
-  const [show, setShow] = useState(false);
-  const [videoId, setVideoId] = useState(null);
+function SingleProject({ data, setPopUpVideo, setShow }) {
+  const { title, description, projectLink, _id } = data;
 
   return (
     <VerticalTimelineElement
@@ -24,33 +22,25 @@ function SingleProject({ data: { title, asIn, id, summary } }) {
         justifyContent: "center",
         display: "flex",
       }}
-      key={title}
+      key={_id}
     >
       <div className="project-container">
         <div
           className="thumbnail"
           onClick={() => {
-            setVideoId(id);
+            setPopUpVideo(projectLink);
             setShow(true);
           }}
         >
-          <img src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`} />
+          <img
+            src={`https://img.youtube.com/vi/${projectLink}/mqdefault.jpg`}
+          />
         </div>
         <div className="name">
-          <h3>{title}</h3>
-          <h2>{asIn}</h2>
+          <h2>{title}</h2>
+          {/* <h2>{asIn}</h2> */}
         </div>
-        <div className="summary-heading">
-          <span children="summary">
-            <i className="fa-solid fa-calendar" /> From {summary}
-          </span>
-        </div>
-        <VideoPopup
-          show={show}
-          setShow={setShow}
-          videoId={videoId}
-          setVideoId={setVideoId}
-        />
+        <p className="summary-heading">{description}</p>
       </div>
     </VerticalTimelineElement>
   );

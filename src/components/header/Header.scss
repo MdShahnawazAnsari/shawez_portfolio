@@ -40,10 +40,10 @@
     img {
       width: 150px;
       height: 80px;
-    @include md {
-      width: 250px;
-      height: 100px;
-    }
+      @include md {
+        width: 250px;
+        height: 100px;
+      }
     }
   }
   .menuItems {
