@@ -3,7 +3,6 @@ import SingleProject from "./singleProject/SingleProject";
 import "./Projects.scss";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { projectData } from "../../constentData/data";
 import axios from "axios";
 import VideoPopup from "../video/VideoPopup";
 const base_uri = "https://shawez-admin.vercel.app";

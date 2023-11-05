@@ -117,7 +117,9 @@
       height: 35vh;
       animation: floatImage 3s ease-in-out infinite;
       margin-top: 4rem;
+      margin-bottom: 4rem;
       @include md {
+        margin-bottom: 0;
         width: 35vw;
         margin-top: -7rem;
       }

@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./Intro.scss";
 const iconItems = [
   {
-    icon: "fa-brands fa-linkedin-in",
-    link: "https://www.linkedin.com/in/shawez-faraz-60300b209/",
+    icon: "fa-brands fa-youtube",
+    link: "https://www.youtube.com/@shawezfaraz",
   },
   {
-    icon: "fa-brands fa-twitter",
-    link: "#",
+    icon: "fa-brands fa-x-twitter",
+    link: "https://twitter.com/ShawezFaraz",
   },
   {
-    icon: "fa-brands fa-facebook-f",
-    link: "#",
+    icon: "fa-brands fa-square-instagram",
+    link: " https://www.instagram.com/shawezfarax",
   },
   {
     icon: "fa-solid fa-envelope",
@@ -103,7 +103,7 @@ const Intro = () => {
             </a>
           </section>
           <section className="image-contanier">
-            <img src="/profile1.jpg" alt="profile" />
+            <img src="/profile-picture.webp" alt="profile" />
             {/* <div className="box">
               <div className="spin-container">
                 <div className="shape">
