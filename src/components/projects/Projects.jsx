@@ -6,6 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import axios from "axios";
 import VideoPopup from "../video/VideoPopup";
 const base_uri = "https://shawez-admin.vercel.app";
+const dev_url = "http://localhost:3000";
 const Projects = () => {
   const [runAnimation, setRunAnimation] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -27,7 +28,7 @@ const Projects = () => {
   const fetchProject = async () => {
     try {
       let { data } = await axios.get(base_uri + "/api/projects");
-      setProjects(data);
+      setProjects(data?.allProjects);
     } catch (error) {
       console.error(error);
     }
